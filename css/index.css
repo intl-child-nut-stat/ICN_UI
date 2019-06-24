@@ -9,4 +9,9 @@
   height: 500px;
 }
 
+.cta h1 {
+  color: white;
+  background-color: rgba(50, 115, 220, 0.3);
+}
+
 
