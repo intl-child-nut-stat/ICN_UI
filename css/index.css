@@ -3,6 +3,22 @@
    License: none (public domain)
 */
 
+html {
+  background-color: brown;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+}
+
 .cta {
   background-image: url("../img/childrenfence.jpg");
   background-size: cover;
