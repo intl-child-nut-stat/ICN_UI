@@ -3,16 +3,26 @@
    License: none (public domain)
 */
 
+body {
+  background-color: #bdd5ea;
+}
+
 html {
-  background-color: brown;
+  font-size: 62.5%;
 }
 
 .navbar {
   text-align: center;
 }
 
+.navbar h1 {
+  font-size: 3rem;
+  color: #fe5f55;
+}
+
 .navbar a {
-  color: white;
+  color: #f7f7ff;
+  font-size: 1.6rem;
 }
 
 .container {
@@ -26,10 +36,36 @@ html {
 }
 
 .cta h1 {
-  color: white;
+  color: #f7f7ff;
   background-color: rgba(50, 115, 220, 0.3);
   text-align: center;
   margin-bottom: 220px;
+  font-size: 4rem;
+}
+
+.cta button {
+  font-size: 2.2rem;
+  background-color: #fe5f55;
+}
+
+.content-box h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fe5f55;
+}
+
+.content-card {
+  text-align: center;
+}
+
+.content-card i {
+  font-size: 3rem;
+  margin: 40px 0 50px 0;
+}
+
+.content-card p {
+  text-align: justify;
+  font-size: 1.3rem;
 }
 
 footer {
@@ -38,5 +74,20 @@ footer {
 }
  footer h3,
  footer p {
-   color: white;
+   color: #f7f7ff;
+ }
+
+ footer h3 {
+   font-size: 2.2rem;
+   color: #fe5f55;
+ }
+
+ footer a {
+   font-size: 1.6rem;
+   padding: 20px;
+   color: #577399;
+ }
+
+ footer p {
+   font-size: 1.1rem;
  }
