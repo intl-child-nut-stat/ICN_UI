@@ -235,3 +235,40 @@ footer {
  from {opacity: .4}
  to {opacity: 1}
 }
+
+
+
+
+
+
+.accordion {
+  background-color: grey;
+  color:brown;
+  cursor: pointer;
+  padding: 26px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: black;
+  font-size: 32px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: peru;
+}
+
+.panel {
+  padding: 0 22px;
+  background-color: pink;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out;
+}
+
+body {
+  background-image: url("https://dt0fz97h6hlvu.cloudfront.net/assets/edcee221c462a0ea944fe86dde5e1748/bgandicreate101117-03.jpg");
+  background-position: 70% 70%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
