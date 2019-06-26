@@ -1,30 +1,44 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  console.log(slides)
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+class TabLink {
+  constructor(link) {
+      // this.link = link
+      const tabNumber = link.dataset.tab
+      console.log('TabLink', tabNumber, '.content[data-tab="' + tabNumber + '"]')
+      this.contentElement = document.querySelector(`.content[data-tab="${tabNumber}"]`)
+      this.tabContent = new Content(this.contentElement)
+      link.addEventListener('click', () => this.linkClick())
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  
+  linkClick() {
+      // console.log(this.tabContent)
+      this.tabContent.toggle()
   }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
+  }
+
+  class Content {
+  constructor(content) {
+      this.content = content
+      console.log('Content', this)
+      this.content.classList.add('js-enabled')
+  }
+  
+  toggle() {
+      // DONE: remove any current tab-active, then add to current content .tab-active
+      const active = document.querySelector('.tab-active')
+      if (active) active.classList.remove('tab-active')
+      this.content.classList.add('tab-active')
+  }
+  }
+
+  const links = document.querySelectorAll('.link[data-tab]')
+  const tabContent = document.querySelector('.tab-content')
+  const defaultTab = tabContent.dataset.defaultTab
+  console.log('default-tab', defaultTab)
+
+  links.forEach((link, index) => {
+  const tabLink = new TabLink(link)
+  console.log('tabLink', index, tabLink)
+  
+  if (index == defaultTab - 1) tabLink.linkClick()
+  })
+  console.log(links)
 
