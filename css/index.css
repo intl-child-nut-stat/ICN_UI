@@ -1,8 +1,7 @@
-/* /* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 body {
   background-color: #bdd5ea;
 }
@@ -10,9 +9,75 @@ body {
 html {
   font-size: 62.5%;
 }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
 
-.navbar {
-  text-align: center;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@keyframes fade {
+ from {opacity: .4}
+ to {opacity: 1}
+}
+
+
+
+
+
+
+
+body {
+	color: #606;
+	font-family: roboto Mono;
+	font-size: 17px;
+  font-weight: 600;
+  
+
+	/* Flex box: center; */
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
 }
 
 .navbar h1 {
@@ -23,16 +88,23 @@ html {
 .navbar a {
   color: #f7f7ff;
   font-size: 1.6rem;
+
+	background-color: none;
+	margin: 0;
+	text-align: center;
 }
 
-.container {
-  max-width: 800px;
+.title {
+	text-align: left;
+	padding: 20px 0;
+	width: 600px;
 }
 
-.cta {
-  background-image: url("../img/childrenfence.jpg");
-  background-size: cover;
-  height: 500px;
+.title-definiton {
+	width: 500px;
+	margin-bottom: 30px;
+	text-align: left;
+	margin-left: 0;
 }
 
 .cta h1 {
@@ -68,207 +140,30 @@ html {
   font-size: 1.3rem;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-}
- footer h3,
- footer p {
-   color: #f7f7ff;
- }
-
- footer h3 {
-   font-size: 2.2rem;
-   color: #fe5f55;
- }
-
- footer a {
-   font-size: 1.6rem;
-   padding: 20px;
-   color: #577399;
- }
-
- footer p {
-   margin-top: 5px;
-   font-size: 1.1rem;
- }
-
- footer i {
-   font-size: 5rem;
-   margin: 5px;
- }
-
-.team {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 20px 0 20px 0;
+.child	{
+	background-color: white;
+	width: 300px;
+	margin: 20px auto;
 }
 
-.team-top, 
-.team-bottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.content-box {
+	box-sizing: content-box;
 }
 
-.team-top .team-card {
-  width: 30%;
+.border-box {
+	box-sizing: border-box;
 }
 
-.team-bottom .team-card {
-  width: 30%;
+.padding {
+	padding: 50px;
 }
 
-.team-card {
-  margin: 30px 0 0 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 10px;
-}
-
-.team-card h2 {
-  color: #fe5f55;
-}
-
-.team-card img {
-  border-radius: 100px;
-  margin-bottom: 10px;
-  width: 150px;
+.border {
+	border: 30px solid rgb(7, 7, 82);
 }
 
 
-
-
-
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
- max-width: 1000px;
- position: relative;
- margin: auto;
+.footer {
+	margin: 60px 0;
 }
 
-/* Hide the images by default */
-.mySlides {
- display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
- cursor: pointer;
- position: absolute;
- top: 50%;
- width: auto;
- margin-top: -22px;
- padding: 16px;
- color: white;
- font-weight: bold;
- font-size: 18px;
- transition: 0.6s ease;
- border-radius: 0 3px 3px 0;
- user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
- right: 0;
- border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
- background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
- color: #f2f2f2;
- font-size: 15px;
- padding: 8px 12px;
- position: absolute;
- bottom: 8px;
- width: 100%;
- text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
- color: #f2f2f2;
- font-size: 12px;
- padding: 8px 12px;
- position: absolute;
- top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
- cursor: pointer;
- height: 15px;
- width: 15px;
- margin: 0 2px;
- background-color: #bbb;
- border-radius: 50%;
- display: inline-block;
- transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
- background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
- -webkit-animation-name: fade;
- -webkit-animation-duration: 1.5s;
- animation-name: fade;
- animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
- from {opacity: .4}
- to {opacity: 1}
-}
-
-@keyframes fade {
- from {opacity: .4}
- to {opacity: 1}
-}
-
-
-
-
-
-
-.accordion {
-  background-color: grey;
-  color:brown;
-  cursor: pointer;
-  padding: 26px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: black;
-  font-size: 32px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: peru;
-}
-
-.panel {
-  padding: 0 22px;
-  background-color: pink;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.8s ease-out;
-}
-
-body {
-  background-image: url("https://dt0fz97h6hlvu.cloudfront.net/assets/edcee221c462a0ea944fe86dde5e1748/bgandicreate101117-03.jpg");
-  background-position: 70% 70%;
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
