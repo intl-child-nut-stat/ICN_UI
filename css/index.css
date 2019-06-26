@@ -39,18 +39,19 @@ html {
   color: #f7f7ff;
   background-color: rgba(50, 115, 220, 0.3);
   text-align: center;
-  margin-bottom: 220px;
+  margin-bottom: 280px;
   font-size: 4rem;
 }
 
 .cta button {
   font-size: 2.2rem;
   background-color: #fe5f55;
+  border: 0;
 }
 
 .content-box h1 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #fe5f55;
 }
 
@@ -60,7 +61,7 @@ html {
 
 .content-card i {
   font-size: 3rem;
-  margin: 40px 0 50px 0;
+  margin: 25px 0 35px 0;
 }
 
 .content-card p {
@@ -98,6 +99,16 @@ footer {
    margin: 5px;
  }
 
+ .about-content {
+   /* background-image: url("../img/childrenwater.jpg");
+   background-size: cover;
+   height: 500px;; */
+   margin: 30px 0;
+   text-align: center;
+   font-size: 1.3rem;
+ }
+
+
 .team {
   display: flex;
   flex-direction: column;
@@ -105,18 +116,22 @@ footer {
   margin: 20px 0 20px 0;
 }
 
-.team-top, 
-.team-bottom {
+/* .team h1 {
+  color: #577399;
+} */
+
+.team-backend, 
+.team-frontend {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.team-top .team-card {
+.team-backend .team-card {
   width: 30%;
 }
 
-.team-bottom .team-card {
+.team-frontend .team-card {
   width: 30%;
 }
 
@@ -127,7 +142,7 @@ footer {
 }
 
 .team-card h2 {
-  color: #fe5f55;
+  color: #577399;
 }
 
 .team-card img {
@@ -137,101 +152,54 @@ footer {
 }
 
 
-
-
-
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
- max-width: 1000px;
- position: relative;
- margin: auto;
+.tabs-content .main-content h1 {
+  text-align: center;
+  color: #fe5f55;
+}
+.tabs-content header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed black;
+}
+.tabs-content header nav {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+.tabs-content .tab-navigator .tab-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-content .tab-navigator .tab-links .link {
+  font-size: 1.3rem;
+  /* padding: 20px 40px; */
+  padding: 10px 40px 5px 40px;
+  background: lightgray;
+  border-radius: 10px 10px 0px 0px;
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+.tabs-content .tab-navigator .tab-content {
+  width: 100%;
+  /* margin-top: 20px; */
+  margin-top: 0px;
+  background: lightgray;
+  border-top: 5px solid #577399;
+}
+.tabs-content .tab-navigator .tab-content .content {
+  padding: 20px;
+  font-size: 1.3rem;
+  /* border: 1px solid black; */
+}
+.tabs-content .tab-navigator .tab-content .js-enabled {
+  display: none;
+}
+.tabs-content .tab-navigator .tab-content .tab-active {
+  display: block;
 }
 
-/* Hide the images by default */
-.mySlides {
- display: none;
-}
 
-/* Next & previous buttons */
-.prev, .next {
- cursor: pointer;
- position: absolute;
- top: 50%;
- width: auto;
- margin-top: -22px;
- padding: 16px;
- color: white;
- font-weight: bold;
- font-size: 18px;
- transition: 0.6s ease;
- border-radius: 0 3px 3px 0;
- user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
- right: 0;
- border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
- background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
- color: #f2f2f2;
- font-size: 15px;
- padding: 8px 12px;
- position: absolute;
- bottom: 8px;
- width: 100%;
- text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
- color: #f2f2f2;
- font-size: 12px;
- padding: 8px 12px;
- position: absolute;
- top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
- cursor: pointer;
- height: 15px;
- width: 15px;
- margin: 0 2px;
- background-color: #bbb;
- border-radius: 50%;
- display: inline-block;
- transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
- background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
- -webkit-animation-name: fade;
- -webkit-animation-duration: 1.5s;
- animation-name: fade;
- animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
- from {opacity: .4}
- to {opacity: 1}
-}
-
-@keyframes fade {
- from {opacity: .4}
- to {opacity: 1}
-}
