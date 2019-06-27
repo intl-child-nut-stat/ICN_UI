@@ -135,14 +135,14 @@ footer {
   }
 }
 
-@media(min-width: 500px) {
+@media(min-width: 600px) {
   .team-backend .team-card,
   .team-frontend .team-card {
     width: 30%;
   }
 }
 
-@media(max-wdith: 500px) {
+@media(max-wdith: 650px) {
   .team-backend .team-card,
   .team-frontend .team-card {
     max-width: 80%;
