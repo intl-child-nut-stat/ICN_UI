@@ -36,29 +36,39 @@
     <div class="container about">
 
         <main class="about-content">
-            <h1>What is ICN</h1>
-            <p>We are a new platform which provides nutrition tracking for various non profits around the world</p>
+            <div class="about-header">
+                <h1>We are ICN</h1>
+                <p>Creating latforms to fight world hunger</p>
+            </div>
+            <hr>
+            <p>ICN works alongside non profits and health organizations to track child nutrition and health status around the world. The information provided from our platform empowers them to better allocate food and resources to communities in need.</p>
         </main>
+
+        <div class="carousel">
+            <div class="left-button"><</div>
+            <img src="img/90skids.jpg" />
+            <img src="img/childrenwater.jpg" />
+            <img src="img/happyafricanchildren.jpg" />
+            <div class="right-button">></div>
+        </div>
 
         <br>
         <section class="team">
-            <h1>Meet Our Team</h1>
+            <h1>Meet The Team</h1>
             <div class="team-backend">
                 <div class="team-card">
-                    <img src="https://i.pravatar.cc/150?img=34">
+                    <img src="https://i.pravatar.cc/150?img=69">
                     <h2>Mark Oliver</h2>
                     <h4>Team Lead</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        labore et dolore magna aliqua.</p>
                 </div>
                 <div class="team-card">
                     <img src="https://i.pravatar.cc/150?img=20">
                     <h2>Manju KC</h2>
                     <h4>Back End</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        labore et dolore magna aliqua.</p>
                 </div>
             </div>
             <div class="team-frontend">
@@ -67,24 +77,21 @@
                     <h2>Annique Nsabimana</h2>
                     <h4>User Interface & Marketing</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        labore et dolore magna aliqua.</p>
                 </div>
                 <div class="team-card">
                     <img src="https://i.pravatar.cc/150?img=2">
                     <h2>Ethan Hickey</h2>
                     <h4>Front-End React</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        labore et dolore magna aliqua.</p>
                 </div>
                 <div class="team-card">
                     <img src="https://i.pravatar.cc/150?img=50">
                     <h2>Landry Irakoze</h2>
                     <h4>User Interface & Marketing</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        labore et dolore magna aliqua.</p>
                 </div>
                       
             </div>
@@ -105,5 +112,61 @@
         <p>Copyright © 2019, International Child Nutrition, USA</p>
     </footer>
 </body>
+
+<script>
+      class Carousel {
+    constructor(element) {
+        this.element = element;
+        
+        this.images = Array.from(this.element.querySelectorAll('img'));
+
+        this.leftButton = this.element.querySelector('.left-button');
+        this.rightButton = this.element.querySelector('.right-button');
+
+        this.leftButton.addEventListener('click', () => this.slideLeft());
+        this.rightButton.addEventListener('click', () => this.slideRight());
+
+        this.images[0].style.display = 'block';
+        // this.test = [1, 2, 3, 4]
+    }
+    
+    slideRight() {
+        // let images = Array.from(this.element.querySelectorAll('img'));
+        // console.log(images);
+        // console.log(this.images);
+
+        this.images.forEach(item => item.style.display = 'none');
+
+        this.images.unshift(this.images[this.images.length -1]);
+        this.images.pop();
+
+        this.images[0].style.display = 'block';
+        console.log('test');
+
+        // console.log(this.test);
+        // this.test.unshift(this.test[this.test.length -1]);
+        // this.test.pop();
+        // console.log(this.test);
+    }
+
+    slideLeft() {
+        console.log('test');
+        this.images.forEach(item => item.style.display = 'none');
+
+        this.images.push(this.images[0]);
+        this.images.shift();
+
+        this.images[0].style.display = 'block';
+
+        // console.log(this.test);
+        // this.test.push(this.test[0]);
+        // this.test.shift();
+        // console.log(this.test);
+    }
+}
+
+let carousel = document.querySelector('.carousel');
+let myCarousel = new Carousel(carousel);
+</script>
 
 </html>

@@ -108,6 +108,17 @@ footer {
    font-size: 1.3rem;
  }
 
+ .about-content .about-header h1 {
+   color: #fe5f55;
+    font-size: 5rem;
+ }
+ .about-content .about-header p {
+  font-size: 2rem;
+}
+
+.about-content > p {
+  font-size: 1.6rem;
+}
 
 .team {
   display: flex;
@@ -127,12 +138,26 @@ footer {
   justify-content: space-around;
 }
 
-.team-backend .team-card {
-  width: 30%;
+@media(max-width: 600px) {
+  .team-backend,
+  .team-frontend {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
-.team-frontend .team-card {
-  width: 30%;
+@media(min-width: 501px) {
+  .team-backend .team-card,
+  .team-frontend .team-card {
+    width: 30%;
+  }
+}
+
+@media(max-wdith: 500px) {
+  .team-backend .team-card,
+  .team-frontend .team-card {
+    max-width: 90%;
+  }
 }
 
 .team-card {
@@ -148,7 +173,8 @@ footer {
 .team-card img {
   border-radius: 100px;
   margin-bottom: 10px;
-  width: 150px;
+  max-width: 150px;
+  height: auto;
 }
 
 
@@ -203,3 +229,55 @@ footer {
 }
 
 
+
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+}
+@media (min-width: 1200px) {
+  .carousel {
+    width: 90%px;
+  }
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #fff;
+  background-color: #333;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  width: 100%;
+  display: none;
+}
