@@ -127,7 +127,7 @@ footer {
   justify-content: space-around;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 500px) {
   .team-backend,
   .team-frontend {
     flex-direction: column;
@@ -135,7 +135,7 @@ footer {
   }
 }
 
-@media(min-width: 501px) {
+@media(min-width: 500px) {
   .team-backend .team-card,
   .team-frontend .team-card {
     width: 30%;
@@ -145,9 +145,10 @@ footer {
 @media(max-wdith: 500px) {
   .team-backend .team-card,
   .team-frontend .team-card {
-    max-width: 90%;
+    max-width: 80%;
   }
 }
+
 
 .team-backend .team-card {
   width: 30%;
