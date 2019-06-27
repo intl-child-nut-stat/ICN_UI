@@ -8,7 +8,7 @@ body {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 80.5%;
 }
 
 .navbar {
@@ -17,7 +17,7 @@ html {
 
 .navbar h1 {
   font-size: 3rem;
-  color: #fe5f55;
+  color:yellow;
 }
 
 .navbar a {
@@ -30,7 +30,7 @@ html {
 }
 
 .cta {
-  background-image: url("../img/childrenfence.jpg");
+  background-image: url("../img/childrenwater.jpg");
   background-size: cover;
   height: 500px;
 }
@@ -45,14 +45,14 @@ html {
 
 .cta button {
   font-size: 2.2rem;
-  background-color: #fe5f55;
+  background-color: #ba55fe;
   border: 0;
 }
 
 .content-box h1 {
   text-align: center;
   margin-bottom: 1rem;
-  color: #fe5f55;
+  color: brown;
 }
 
 .content-card {
@@ -75,12 +75,12 @@ footer {
 }
  footer h3,
  footer p {
-   color: #f7f7ff;
+   color: rgb(0, 204, 255);
  }
 
  footer h3 {
    font-size: 2.2rem;
-   color: #fe5f55;
+   color: yellowgreen;
  }
 
  footer a {
@@ -137,12 +137,12 @@ footer {
 
 .team-card {
   margin: 30px 0 0 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(226, 220, 220, 0.945), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px;
 }
 
 .team-card h2 {
-  color: #577399;
+  color: #0450b9;
 }
 
 .team-card img {
@@ -154,7 +154,7 @@ footer {
 
 .tabs-content .main-content h1 {
   text-align: center;
-  color: #fe5f55;
+  color: blue;
 }
 .tabs-content header {
   width: 100%;
@@ -162,7 +162,7 @@ footer {
   justify-content: space-between;
   padding: 30px 0;
   margin-bottom: 30px;
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dashed silver;
 }
 .tabs-content header nav {
   display: flex;
@@ -175,10 +175,10 @@ footer {
   justify-content: space-between;
 }
 .tabs-content .tab-navigator .tab-links .link {
-  font-size: 1.3rem;
+  font-size: 2.5rem;
   /* padding: 20px 40px; */
   padding: 10px 40px 5px 40px;
-  background: lightgray;
+  background: rgb(102, 97, 97);
   border-radius: 10px 10px 0px 0px;
   /* border: 1px solid black; */
   cursor: pointer;
@@ -188,11 +188,11 @@ footer {
   /* margin-top: 20px; */
   margin-top: 0px;
   background: lightgray;
-  border-top: 5px solid #577399;
+  border-top: 5px solid #1d73eb;
 }
 .tabs-content .tab-navigator .tab-content .content {
   padding: 20px;
-  font-size: 1.3rem;
+  font-size: 2rem;
   /* border: 1px solid black; */
 }
 .tabs-content .tab-navigator .tab-content .js-enabled {
@@ -203,7 +203,7 @@ footer {
 }
 
 body {
-  background-image: url(https://www.punmiris.com/himg/o.29717.jpg);
+  background-image: url(https://aspen-nyc.com/wp-content/uploads/2019/04/temporary-baby-shower-beautiful-photo-background-apple-green-tufted-this-year.jpg);
   background-position: 100% 100%;
   background-repeat: repeat;
   background-attachment: fixed;
