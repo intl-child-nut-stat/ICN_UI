@@ -17,7 +17,7 @@ html {
 
 .navbar h1 {
   font-size: 3rem;
-  color:yellow;
+  color: yellow;
 }
 
 .navbar a {
@@ -48,9 +48,9 @@ html {
   background-color: #ba55fe;
   border: 0;
 }
-@media(max-width:500px) {
+@media (max-width: 500px) {
   .cta button {
-    font-size:10px;
+    font-size: 10px;
   }
 }
 
@@ -58,6 +58,17 @@ html {
   text-align: center;
   margin-bottom: 1rem;
   color: brown;
+}
+
+.wwd {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: brown;
+}
+@media (max-width: 500px) {
+  .wwd {
+    margin-bottom: 50px;
+  }
 }
 
 .content-card {
@@ -78,41 +89,40 @@ footer {
   display: flex;
   flex-direction: column;
 }
- footer h3,
- footer p {
-   color: rgb(0, 204, 255);
- }
+footer h3,
+footer p {
+  color: rgb(0, 204, 255);
+}
 
- footer h3 {
-   font-size: 2.2rem;
-   color: yellowgreen;
- }
+footer h3 {
+  font-size: 2.2rem;
+  color: yellowgreen;
+}
 
- footer a {
-   font-size: 1.6rem;
-   padding: 20px;
-   color: #577399;
- }
+footer a {
+  font-size: 1.6rem;
+  padding: 20px;
+  color: #577399;
+}
 
- footer p {
-   margin-top: 5px;
-   font-size: 1.1rem;
- }
+footer p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
 
- footer i {
-   font-size: 5rem;
-   margin: 5px;
- }
+footer i {
+  font-size: 5rem;
+  margin: 5px;
+}
 
- .about-content {
-   /* background-image: url("../img/childrenwater.jpg");
+.about-content {
+  /* background-image: url("../img/childrenwater.jpg");
    background-size: cover;
    height: 500px;; */
-   margin: 30px 0;
-   text-align: center;
-   font-size: 1.3rem;
- }
-
+  margin: 30px 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
 
 .team {
   display: flex;
@@ -120,19 +130,21 @@ footer {
   text-align: center;
   margin: 20px 0 20px 0;
 }
+@media (max-width: 500px) {
+  .team {
+    margin: 20%;
+    width: 60%;
+  }
+}
 
-/* .team h1 {
-  color: #577399;
-} */
-
-.team-backend, 
+.team-backend,
 .team-frontend {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .team-backend,
   .team-frontend {
     flex-direction: column;
@@ -140,23 +152,17 @@ footer {
   }
 }
 
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   .team-backend .team-card,
   .team-frontend .team-card {
     width: 100%;
   }
 }
 
-@media(max-width: 650px) {
+@media (max-width: 650px) {
   .team-backend .team-card,
   .team-frontend .team-card {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .team {
-    margin: 30%;
+    max-width: 80%;
   }
 }
 
@@ -170,7 +176,8 @@ footer {
 
 .team-card {
   margin: 30px 0 0 0;
-  box-shadow: 0 4px 8px 0 rgba(226, 220, 220, 0.945), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(226, 220, 220, 0.945),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 10px;
 }
 
@@ -183,7 +190,6 @@ footer {
   margin-bottom: 10px;
   width: 150px;
 }
-
 
 .tabs-content .main-content h1 {
   text-align: center;
@@ -235,18 +241,20 @@ footer {
   display: block;
 }
 
-  @media (max-width: 500px) {
-    .tab-navigator, .tab-links, .link {
-      max-width: 100%;
-      padding: 0%;
-      padding-top: 10px;
-      padding-bottom: 15px;
-      display: flex;
-      flex-direction: column;
-      font-size: 18px;
-      border-right: none;
-      border-bottom: 2px solid #8bc53e;
-    }
+@media (max-width: 500px) {
+  .tab-navigator,
+  .tab-links,
+  .link {
+    max-width: 100%;
+    padding: 0%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    border-right: none;
+    border-bottom: 2px solid #8bc53e;
+  }
 }
 
 body {
@@ -267,11 +275,9 @@ body {
   overflow: hidden;
   margin-top: 16px;
 }
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   .carousel {
     height: auto;
     margin: 50px 0 20px 0;
   }
 }
-
-
