@@ -147,10 +147,16 @@ footer {
   }
 }
 
-@media(max-wdith: 650px) {
+@media(max-width: 650px) {
   .team-backend .team-card,
   .team-frontend .team-card {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .team {
+    margin: 30%;
   }
 }
 
