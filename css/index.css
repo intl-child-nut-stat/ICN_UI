@@ -231,3 +231,22 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
 }
+
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+}
+@media(max-width: 600px) {
+  .carousel {
+    height: auto;
+    margin: 50px 0 20px 0;
+  }
+}
+
