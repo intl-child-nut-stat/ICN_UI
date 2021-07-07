@@ -1,18 +1,28 @@
 /* /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
+   v2.0 | 20110126 
    License: none (public domain)
 */
 
+body {
+  background-color: #bdd5ea;
+}
+
 html {
-  background-color: brown;
+  font-size: 80.5%;
 }
 
 .navbar {
   text-align: center;
 }
 
+.navbar h1 {
+  font-size: 3rem;
+  color: yellow;
+}
+
 .navbar a {
-  color: white;
+  color: #f7f7ff;
+  font-size: 1.6rem;
 }
 
 .container {
@@ -20,23 +30,254 @@ html {
 }
 
 .cta {
-  background-image: url("../img/childrenfence.jpg");
+  background-image: url("../img/childrenwater.jpg");
   background-size: cover;
   height: 500px;
 }
 
 .cta h1 {
-  color: white;
+  color: #f7f7ff;
   background-color: rgba(50, 115, 220, 0.3);
   text-align: center;
-  margin-bottom: 220px;
+  margin-bottom: 280px;
+  font-size: 4rem;
+}
+
+.cta button {
+  font-size: 2.2rem;
+  background-color: #ba55fe;
+  border: 0;
+}
+@media (max-width: 500px) {
+  .cta button {
+    font-size: 10px;
+  }
+}
+
+.content-box h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: brown;
+}
+
+.wwd {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: brown;
+}
+@media (max-width: 500px) {
+  .wwd {
+    margin-bottom: 50px;
+  }
+}
+
+.content-card {
+  text-align: center;
+}
+
+.content-card i {
+  font-size: 3rem;
+  margin: 25px 0 35px 0;
+}
+
+.content-card p {
+  text-align: justify;
+  font-size: 1.3rem;
 }
 
 footer {
   display: flex;
   flex-direction: column;
 }
- footer h3,
- footer p {
-   color: white;
- }
+footer h3,
+footer p {
+  color: rgb(0, 204, 255);
+}
+
+footer h3 {
+  font-size: 2.2rem;
+  color: yellowgreen;
+}
+
+footer a {
+  font-size: 1.6rem;
+  padding: 20px;
+  color: #577399;
+}
+
+footer p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+footer i {
+  font-size: 5rem;
+  margin: 5px;
+}
+
+.about-content {
+  /* background-image: url("../img/childrenwater.jpg");
+   background-size: cover;
+   height: 500px;; */
+  margin: 30px 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+@media (max-width: 500px) {
+  .team {
+    margin: 20%;
+    width: 60%;
+  }
+}
+
+.team-backend,
+.team-frontend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+  .team-backend,
+  .team-frontend {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .team-backend .team-card,
+  .team-frontend .team-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .team-backend .team-card,
+  .team-frontend .team-card {
+    max-width: 80%;
+  }
+}
+
+.team-backend .team-card {
+  width: 30%;
+}
+
+.team-frontend .team-card {
+  width: 30%;
+}
+
+.team-card {
+  margin: 30px 0 0 0;
+  box-shadow: 0 4px 8px 0 rgba(226, 220, 220, 0.945),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+}
+
+.team-card h2 {
+  color: #0450b9;
+}
+
+.team-card img {
+  border-radius: 100px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.tabs-content .main-content h1 {
+  text-align: center;
+  color: blue;
+}
+.tabs-content header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed silver;
+}
+.tabs-content header nav {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+.tabs-content .tab-navigator .tab-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-content .tab-navigator .tab-links .link {
+  font-size: 2.5rem;
+  /* padding: 20px 40px; */
+  padding: 10px 40px 5px 40px;
+  background: rgb(102, 97, 97);
+  border-radius: 10px 10px 0px 0px;
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+.tabs-content .tab-navigator .tab-content {
+  width: 100%;
+  /* margin-top: 20px; */
+  margin-top: 0px;
+  background: lightgray;
+  border-top: 5px solid #1d73eb;
+}
+.tabs-content .tab-navigator .tab-content .content {
+  padding: 20px;
+  font-size: 2rem;
+  /* border: 1px solid black; */
+}
+.tabs-content .tab-navigator .tab-content .js-enabled {
+  display: none;
+}
+.tabs-content .tab-navigator .tab-content .tab-active {
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .tab-navigator,
+  .tab-links,
+  .link {
+    max-width: 100%;
+    padding: 0%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    border-right: none;
+    border-bottom: 2px solid #8bc53e;
+  }
+}
+
+body {
+  background-image: url(https://aspen-nyc.com/wp-content/uploads/2019/04/temporary-baby-shower-beautiful-photo-background-apple-green-tufted-this-year.jpg);
+  background-position: 100% 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+}
+@media (max-width: 600px) {
+  .carousel {
+    height: auto;
+    margin: 50px 0 20px 0;
+  }
+}
